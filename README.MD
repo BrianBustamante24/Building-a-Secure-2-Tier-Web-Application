@@ -1,4 +1,4 @@
-Network Segmentation with Azure VNet and NSGs
+# Network Segmentation with Azure VNet and NSGs
 
 ## 🎥 Live Demonstration Video
 
