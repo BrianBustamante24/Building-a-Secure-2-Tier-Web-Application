@@ -8,13 +8,6 @@
 
 ---
 
-**Difficulty:** Beginner → Intermediate
-**Estimated Time:** 45–60 minutes
-**Cloud Provider:** Microsoft Azure
-**Category:** IaaS / Network Security / Virtual Networking
-
----
-
 ## 📋 Overview
 
 This lab builds a classic **two-tier IaaS network architecture** inside Azure. A **Virtual Network (VNet)** is segmented into two subnets — a **public-facing web tier** and an **isolated private database tier** — and access between them is enforced using **Network Security Groups (NSGs)**.
@@ -30,7 +23,7 @@ flowchart TB
     Internet([🌐 Internet])
 
     subgraph SUB["☁️ Azure Subscription"]
-        subgraph RG["📦 Resource Group: rg-lab02-[yourname] — East US"]
+        subgraph RG["📦 Resource Group: rg-lab02 — East US"]
             subgraph VNET["🔷 VNet: vnet-lab02 (10.0.0.0/16)"]
 
                 subgraph PUBSNET["🟩 Public Subnet: snet-web (10.0.1.0/24)"]
@@ -82,7 +75,7 @@ flowchart TB
 
 | Resource | Value |
 |---|---|
-| Resource Group | `rg-lab02-[yourname]` |
+| Resource Group | `rg-lab02` |
 | Virtual Network | `vnet-lab02` |
 | Address Space | `10.0.0.0/16` |
 | Public Subnet | `snet-web` — `10.0.1.0/24` |
@@ -101,7 +94,7 @@ flowchart TB
 
 1. In the Azure Portal, search **Virtual Networks** → **+ Create**.
 2. Configure:
-   - **Resource group:** Create new → `rg-lab02-[yourname]`
+   - **Resource group:** Create new → `rg-lab02`
    - **Name:** `vnet-lab02`
    - **Region:** East US
 3. Under **IP Addresses**, set address space to `10.0.0.0/16` and add two subnets:
@@ -115,7 +108,7 @@ flowchart TB
 
 1. Search **Virtual Machines** → **+ Create**.
 2. Configure:
-   - **Resource group:** `rg-lab02-[yourname]`
+   - **Resource group:** `rg-lab02`
    - **Name:** `vm-web-01`
    - **Region:** East US
    - **Image:** Ubuntu Server 20.04 LTS
