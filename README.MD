@@ -2,9 +2,7 @@
 
 ## 🎥 Live Demonstration Video
 
-> 📺 **[Watch the full walkthrough here](#)**
->
-> *Replace this link with your recorded demo (YouTube, Loom, etc.) showing the VNet creation, VM deployments, jump host connectivity test, and NSG rule configuration.*
+> 📺 https://www.loom.com/share/6d551de97d114fd9b67394f904bca78a 
 
 ---
 
